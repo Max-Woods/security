@@ -24,7 +24,7 @@ import com.imooc.security.rbac.repository.AdminRepository;
 public class RbacUserDetailsService implements UserDetailsService {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
-	
+
 	@Autowired
 	private AdminRepository adminRepository;
 

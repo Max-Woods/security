@@ -8,8 +8,19 @@
 
 	<properties>
 		<imooc.security.version>1.0.0-SNAPSHOT</imooc.security.version>
+		<nexus3.maven2.public>http://192.168.2.200:18081/repository/maven-public/</nexus3.maven2.public>
 	</properties>
-
+            <repositories>
+                <!--  fxy  -->
+                <repository>
+                    <id>fxy</id>
+                    <url>${nexus3.maven2.public}</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </snapshots>
+                </repository>
+            </repositories>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
